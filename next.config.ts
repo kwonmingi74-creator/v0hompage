@@ -2,8 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // 개발 모드 성능 최적화
-  swcMinify: true,
   // 컴파일 속도 향상
   experimental: {
     optimizePackageImports: ['lucide-react'],
