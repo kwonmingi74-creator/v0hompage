@@ -2,6 +2,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // 개발 모드 성능 최적화
+  swcMinify: true,
+  // 컴파일 속도 향상
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
+  },
+  // 이미지 최적화
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
 };
 
 export default nextConfig;
